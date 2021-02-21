@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.circulo{
+			width:150px;
+			height:150px;
+			float:left;
+			margin-right:50px;
+			border-radius:50%;
+		}
+		#circulo-rojo{
+			background-color:red;
+		}
+		#circulo-verde{
+			background-color:green;
+		}
+		#circulo-azul{
+			background-color:blue;
+		}
+	</style>
+</head>
+<body>
+	<div id="circulo-rojo"onclick="circuloRojo()"class="circulo"></div>
+	<div id="circulo-verde"onclick="circuloVerde()"class="circulo"></div>
+	<div id="circulo-azul"onclick="circuloAzul()"class="circulo"></div>
+	
+	<script>
+		function circuloRojo(){
+			document.getElementById("circulo-rojo").style.display="none";
+		}
+		function circuloVerde(){
+			document.getElementById("circulo-verde").style.display="none";
+		}
+		function circuloAzul(){
+			document.getElementById("circulo-azul").style.display="none";
+		}
+		
+	</script>
+</body>
+</html>

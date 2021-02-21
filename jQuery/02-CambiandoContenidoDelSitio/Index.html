@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cambiando el contenido del sitio</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+		#circulo{
+			border-radius:50%;
+			background-color:red;
+			width:150px;
+			height:150px;
+			margin:5px;
+		}
+	</style>
+</head>
+<body>
+	
+	<p id="nombre">Mi nombre es: </p>
+	<button id="btnCambiar">Cambiar Nombre</button>
+	<br><br>
+	<div id="circulo"></div>
+	<iframe src="http://www.chilangoskate.com"></iframe>
+	<script>
+		$("#btnCambiar").click(function(){
+			//Cambia el texto del parrafo
+			$("#nombre").html("Mi nombre es: Edson Galan");
+			//Obtiene el texto del parrafo
+			alert($("p").html());
+			//Cambia el color del circulo			
+		})
+		//Cuando pasa el mouse por el circulo manda un mensaje
+		$("#circulo").hover(function(){
+			alert("Haz pasado por el circulo");
+			//Cambiando el iframe cuando pasemos el mouse por el circulo
+			$("iframe").attr("src","http://www.cnn.com");
+		})
+		
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Estilos con Javascript</title>
+</head>
+<body>
+	<p id="parrafo">Este es un elemento de parrafo</p>
+	<button id="boton">Cambiar Estilo</button>
+	<script>
+		//Modificando el Estilo
+		document.getElementById("boton").onclick=function (){
+			document.getElementById("parrafo").style.color="red";
+			document.getElementById("parrafo").style.fontSize="30px";
+			document.getElementById("parrafo").style.fontWeight="900";
+			
+			// Oculta el element document.getElementById("parrafo").style.display="none";
+			//Mas propiedades https://www.w3schools.com/jsref/dom_obj_style.asp
+			
+		}
+	</script>
+</body>
+</html>

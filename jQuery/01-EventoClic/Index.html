@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Evento Clic en jQuery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+		#circulo{
+			width:150px;
+			height:150px;
+			border-radius:50%;
+			background-color:green;
+			margin:10px;
+		}
+		.cuadrado{
+			width:150px;
+			height:150px;
+			background-color:red;
+			margin:10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="circulo"></div>
+	<div class="cuadrado"></div>
+	<div class="cuadrado"></div>
+	<script type="text/javascript">
+		 //Selector por ID
+		 $("#circulo").click(function(){
+			alert("Haz dado clic al circulo");
+		 })
+		 //Selector por Clase
+		 $(".cuadrado").click(function(){
+			alert("Haz dado clic al cuadrado");
+		 })
+		 //selector por etiqueta
+		 $("div").click(function(){
+			alert("Haz dado clic en un elemento div");
+		 })
+	</script>
+</body>
+</html>

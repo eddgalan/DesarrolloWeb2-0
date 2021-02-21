@@ -1,0 +1,18 @@
+<!DOCUMENT html>
+<html>
+<head>
+	<title>Variables en JavaScript</title>
+</head>
+<body>
+	<input id="txtUser"type="text"placeholder="User name"><br>
+	<p id="parrafo"></p>
+	<button onclick="iniciarSesion()">Aceptar</button>
+	
+	<script>
+		function iniciarSesion(){
+			var user=document.getElementById("txtUser").value;
+			document.getElementById("parrafo").innerHTML="Bienvenido "+user;
+		}
+	</script>
+</body>
+</html>

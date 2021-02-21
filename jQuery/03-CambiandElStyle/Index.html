@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Modificar Style</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+		#circulo{
+			height:150px;
+			width:150px;
+			border-radius:50%;
+			background-color:blue;
+		}
+	</style>
+</head>
+<body>
+	<div id="circulo"></div>
+	
+	
+	<script>
+		$("#circulo").click(function(){
+			//Modificando el color
+			$("#circulo").css("background-color","green");
+			//Modificar dimensiones del circulo
+			$("#circulo").css("height","300px");
+			$("#circulo").css("width","300px");
+			//Obtener el color del circulo
+			alert($("#circulo").css("background-color"));
+			//Obtener el ancho del body
+			alert($("body").css("width"));
+			//Desaparecer elementos
+			$(this).css("display","none");	//this se usa para hacer referencia al elemento donde se hace clic			
+		})
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Arreglo con for</title>
+</head>
+<body>
+	<div id="comidasDiv">
+		
+	</div>
+	<script>
+		var cadenaComidas="";
+		var comidas=["Pastel","Hot-Cakes","Churros","Café","Chocolate"];
+		for(var i=comidas.length-1;i>=0;i--){
+			cadenaComidas=cadenaComidas+"<p>"+comidas[i]+"</p>";
+		}
+		document.getElementById("comidasDiv").innerHTML=cadenaComidas;
+	</script>
+</body>
+</html>

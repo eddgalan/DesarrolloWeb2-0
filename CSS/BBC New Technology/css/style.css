@@ -1,0 +1,100 @@
+body{
+		margin:0;padding:0;
+		font-family:Helvetica,Arial,sans-serif;
+	}
+	
+	#TopBar{
+		witdh:1100px;height:35px;
+		margin:0;
+		background-color:#FFFFFF;
+		auto;
+	}
+	#logo{
+		margin-top:5px;
+		witdh:84;height:24px;
+		float:left;
+		margin-right:8px;
+	}
+	.TopBarSection{
+		float:left;
+		border-left:1px #CCCCCC solid;
+		height:100%;
+	}
+	#signin-img{
+		witdh:30px;
+		margin:5px 5px;
+		float:left;
+	}
+	#signin-text{
+		font-weight:bold;
+		font-size:85%;
+		position:relative;
+		top:8px;
+		padding-right:70px;
+	}
+	.TopBarMenu{
+		font-weight:bold;
+		font-size:85%;
+		padding:10px 15px 0 15px;
+		height:25px;
+	}
+	#ImgFlechaMore{
+		float:right;
+		margin-left:10px;
+	}
+	#SearchBox{
+		background-color:#E4E4E4;
+		border:none;
+		font-weight:bold;
+		font-size:14px;
+		width:100px;
+		float:left;
+		margin:9px 0px 5px 5px;
+	}
+	#Lupa{
+		width:15px;
+		height:18px;
+		background-color:#E4E4E4;
+		margin:9px 0px;
+	}
+	.clear{
+		clear:both;
+	}
+	
+	#MenuBarContainer{
+		background-color:#BB1919;
+		width:100%;height:60px;
+		border-top:1px solid  #CCCCCC;
+	}
+	#MenuBar{
+		width:1100px;margin:0 auto;
+	}
+	h1{
+		padding:0;
+		margin:0;
+		color:white;
+		font-size:40px;
+		font-weight:300;
+		padding-top:10px;
+	}
+	#MenuBarContainer2{
+		background-color:#A91717;
+		width:100%;height:30px;
+	}
+	#MenuBar2{
+		width:1100px;margin:0 auto;
+	}
+	#MenuBar2 a{
+		color:white;
+		text-decoration:none;
+		font-size:14px;
+		border-right:1px solid #B84545;
+		position:relative;top:5px;padding: 0 10px;
+	}
+	#MenuBar2 a:hover{
+		text-decoration:underline;
+	}
+	.NoBorder{
+		border:none !important;/*Da prioridad a quitar el borde a esta etiqueta*/
+		
+	}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adivina el número</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<h1>Adivina el número</h1>
+	<img src="signo.jpg" width="170px"><br>
+	<input type="text"id="txtNumero"placeholder="Inserte el numero"><br><br>
+	<button onclick="intentar()">Aceptar</button>
+	<button onclick="nuevoJuego()">Reiniciar Juego</button>
+	<p id="intentos">Intentos restantes: 3</p>
+	<p>
+		El juego consiste en adivinar un número que se encuentra entre el 1 y el 5.<br>
+		Solo tienes 3 intentos. Suerte.
+	</p>
+	<script>
+		var intentos=3;						//Son los numeros de intentos que tiene para adivinar el numero
+		var x=parseInt(Math.random()*6);	//Usa la funcion Math.random para generar el aleatorio y lo convierte a entero (Para eliminar los decimales).
+		function intentar(){
+			var numero=document.getElementById("txtNumero").value;
+			if(numero==x){
+				alert("Acertaste!! El numero que haz insertado es el correcto");
+			}else{
+				intentos--;	//Decrementa los intentos
+				document.getElementById("intentos").innerHTML="Intentos restantes: "+intentos;
+				alert("El número insertado NO es el correcto. Prueba con otro.");
+				document.getElementById("txtNumero").value="";
+				if(intentos<=0){
+					alert("Te haz quedado sin intentos. El número era el: "+x+" El juego se reiniciará.");
+					nuevoJuego();	//Llama a la función nuevoJuego para reiniciar el juego
+				}
+			}
+		}
+		function nuevoJuego(){
+			intentos=3;
+			x=Math.floor(Math.random()*6);		//Usa la funcion Math.floor para redondear hacia abajo (Otra forma de generar un número aleatorio
+			document.getElementById("txtNumero").value="";
+			document.getElementById("intentos").innerHTML="Intentos restantes: "+intentos;
+		}
+	</script>
+</body>
+</html>

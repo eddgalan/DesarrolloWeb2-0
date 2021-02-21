@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validando un texto</title>
+</head>
+<body>
+	<input type="text"id="txtUser"placeholder="User name">
+	<button onclick="validarTexto()">Aceptar</button>
+	
+	<script>
+		function validarTexto(){
+			var user=document.getElementById("txtUser").value;
+			if(user=="sysadmin"){
+				alert("Bienvenido de nuevo");
+			}else{
+				alert("Usuario incorrecto");
+			}
+		}
+	</script>
+</body>
+</html>

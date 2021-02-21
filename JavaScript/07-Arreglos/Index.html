@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arreglos</title>
+</head>
+<body>
+	
+	<script>
+		var colores=new Array();	//Declaración de un array (Arreglo)
+		colores[0]="Rojo";
+		colores[1]="Azul";
+		//alert(colores[0]);
+		//alert(colores[1]);
+		
+		var comidas=["Arroz","Cereal","Tacos","Pozole"];	//Otra forma de declarar un arreglo
+		//alert(comidas[0]);
+		
+		comidas.push("Enchiladas");	//Inserta un nuevo elemento al final del arreglo
+		console.log(comidas);	//Muestra en la consola del navegador los datos del arreglo
+		
+		comidas.splice(1,2);	//Elimina elementos (Indice donde comienza a eliminar,Número de elementos a eliminar);
+		console.log(comidas);
+		
+		comidas.splice(1,0,"Cereal");	//Inserta un elemento en la posición insertada(Indice,0=No eliminar,Dato a insertar)
+		console.log(comidas);		
+	</script>
+</body>
+</html>

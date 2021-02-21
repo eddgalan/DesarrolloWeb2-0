@@ -1,0 +1,33 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>Cambiando el contenido del sitio</title>
+</head>
+<body>
+	<p id="parrafo1">Hola Mundo</p>
+	<button id="boton1">Cambiar el texto</button>
+	<p id="parrafo2">JavaScript es...</p>
+	<button id="boton2">Cambia el texto</button>
+	<p id="parrafo3"></p>
+	<button id="crearParrafo">Crea parrafo</button>
+	<script>
+		document.getElementById("boton1").onclick=
+		function(){
+			document.getElementById("parrafo1").innerHTML="Hola Edson Galan";
+		}
+		
+		document.getElementById("boton2").onclick=
+		function (){
+			document.getElementById("parrafo2").innerHTML+=" Genial!! :D";
+		}
+		
+		document.getElementById("crearParrafo").onclick=
+		function(){
+			document.getElementById("parrafo3").innerHTML="<h1>Bienvenido al maravilloso mundo de JavaScript</h1>";
+		}
+		
+	</script>
+	
+	
+</body>
+</html>
